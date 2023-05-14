@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'openAngular';
+  usuario = "jose";
+
+
+  //  seejecuta cuando en el hijo saludo component se pulse u boton
+  getMessageFromChild(event: string) {
+    alert(event);
+  }
+
 }
