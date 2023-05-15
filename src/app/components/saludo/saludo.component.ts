@@ -40,4 +40,21 @@ export class SaludoComponent implements OnInit, OnDestroy, OnChanges {
     this.messageEmitter.emit(`Hola. ${this.name}, alerta despachada desde un emiter`);
   }
 
+  /*
+
+  ! ciclo de vida del componente
+
+  * 1.- ngOnChanges
+  * 2.- ngOnInit
+  3.- ngAfterContentInit
+  4.- ngAfterContentChecked
+  5.- ngAfterViewInit
+  6.- ngAfterViewChecked
+  7.- ngAfterContentChecked
+  8.- ngAfterViewChecked
+  * 9.- ngOnDestroy
+
+  */
+
+
 }
