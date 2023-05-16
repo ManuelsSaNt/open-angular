@@ -1,0 +1,41 @@
+
+
+<!-- directivas atributo -->
+
+<p>Lista de elementos:</p>
+
+<p ngClass="underlined">aqui vamos a iterar una lista y mostrar varios elementos</p>
+
+<p [ngClass]="['underlined', 'small']">Aun no tienes elmentos en la lista</p>
+
+
+
+<!-- change state -->
+<button (click)="changeLoad()"> {{cargando ? 'Kill charge' : 'Init Charge'}} </button>
+
+<!-- directivas estructurales -->
+
+<!-- ngIf -->
+<p *ngIf="cargando">
+  Cargando...
+</p>
+
+<!-- ngIfElse  -->
+<ng-container *ngIf="!cargando; else waitTemplate">
+  <p>todo listo</p>
+</ng-container>
+
+<ng-template #waitTemplate>
+  <p>aun cargando</p>
+</ng-template>
+<!-- // ngIfElse -->
+
+
+<!-- USO DE NGFOR ITERACION DE LISTAS -->
+
+<div *ngFor="let product of elementsList; let i = index; let even = even;">
+  <p>ID: {{ i + 1 }}</p>
+  <p>{{ product.name }} - {{product.price}}</p>
+  <p>{{ product.descritpion }}</p>
+</div>
+
