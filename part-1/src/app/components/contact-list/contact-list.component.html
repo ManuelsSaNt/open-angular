@@ -1,0 +1,9 @@
+
+<h1>Lista de contactos</h1>
+
+<div *ngFor="let contact of contactList;">
+  <p>{{ contact.name }}</p>
+  <p>my id is {{ contact.id }}</p>
+</div>
+
+<h1> {{ oneContact?.name }} {{ oneContact?.id }}</h1>

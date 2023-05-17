@@ -7,11 +7,13 @@ import { SaludoComponent } from './components/saludo/saludo.component';
 
 // modulo personalizado
 import { ListModule } from './modules/list/list.module';
+import { ContactListComponent } from './components/contact-list/contact-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SaludoComponent,
+    ContactListComponent,
   ],
   imports: [
     BrowserModule,
