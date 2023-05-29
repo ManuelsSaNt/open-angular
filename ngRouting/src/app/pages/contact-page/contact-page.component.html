@@ -5,10 +5,11 @@
 
 <!-- List the contacts and can navigate on click over the detail -->
 
-<div *ngFor="let item of listaContactos; let i=index">
+<div *ngFor="let contact of listaContactos; let i=index">
 
-  <div routerLink="{{ item.id }}">
-    <h6>{{ item.name }}</h6>
+  <div routerLink="{{ contact.id }}">
+    <h6>{{ contact.name }}</h6>
+    <button (click)="volverAHome(contact)">Enviar Contacto</button>
   </div>
 
 </div>

@@ -8,18 +8,33 @@ import { SaludoComponent } from './components/saludo/saludo.component';
 // modulo personalizado
 import { ListModule } from './modules/list/list.module';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
+import { FormularioComponent } from './components/forms/formulario/formulario.component';
+import { FormularioAnidadoComponent } from './components/forms/formulario-anidado/formulario-anidado.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormularioArrayComponent } from './components/forms/formulario-array/formulario-array.component';
+import { FormularioValidadoComponent } from './components/forms/formulario-validado/formulario-validado.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SaludoComponent,
     ContactListComponent,
+    FormularioComponent,
+    FormularioAnidadoComponent,
+    FormularioArrayComponent,
+    FormularioValidadoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     // modulo personalizado
-    ListModule
+    ListModule,
+
+    // forumularios reactivos
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,39 @@
+
+<form [formGroup]="miFormularioValidado" (submit)="enviarFormulario()">
+
+  <h3>datos del form</h3>
+  <p>{{miFormularioValidado.value | json}}</p>
+
+  <input placeholder="nombre" formControlName="nombre">
+  <div *ngIf="nombre?.errors?.['required'] && nombre?.touched">
+    <p style="color: red">El campo es olbigatorio viejo</p>
+  </div>
+
+  <input placeholder="apellido" formControlName="apellido">
+
+  <input type="number" placeholder="edad" formControlName="edad">
+  <div *ngIf="edad?.errors?.['required'] && edad?.touched">
+    <p style="color: red">El campo es olbigatorio viejo</p>
+  </div>
+  <div *ngIf="edad?.errors?.['min'] && edad?.touched">
+    <p style="color: red">no puedes ser menos de 18, tu edad: {{edad?.errors?.['min'].actual}}</p>
+  </div>
+  <div *ngIf="edad?.errors?.['max'] && edad?.touched">
+    <p style="color: red">no puedes ser mayor de 99, tu edad: {{edad?.errors?.['max'].actual}}</p>
+  </div>
+
+  <input placeholder="email" formControlName="email">
+  <div *ngIf="email?.errors?.['required'] && email?.touched">
+    <p style="color: red">El campo es olbigatorio viejo</p>
+  </div>
+
+  <input placeholder="password" formControlName="password">
+  <div *ngIf="password?.errors?.['required'] && password?.touched">
+    <p style="color: red">El campo es olbigatorio viejo</p>
+  </div>
+
+  <button [disabled]="miFormularioValidado.invalid" type="submit">
+    Enviar
+  </button>
+
+</form>

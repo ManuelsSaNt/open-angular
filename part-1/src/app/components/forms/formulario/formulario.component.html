@@ -1,0 +1,24 @@
+
+<!-- Formulario reactivo basico -->
+
+<form [formGroup]="miFormulario">
+
+  <!-- previsualizacion de los valores del formulario -->
+  <h2>Datos en vivo del formulario: </h2>
+  <!-- Pipe de angular para pasar el Object a json -->
+  <p>{{ miFormulario.value | json }}</p>
+
+
+  <input placeholder="Nombre" formControlName="nombre" type="text">
+
+  <input placeholder="Apellido" formControlName="apellidos" type="text">
+
+  <input placeholder="email" formControlName="email" type="text">
+
+  <input placeholder="1111111111" formControlName="telefono" type="text">
+
+  <input placeholder="calle 12312" formControlName="direccion" type="text">
+
+</form>
+
+

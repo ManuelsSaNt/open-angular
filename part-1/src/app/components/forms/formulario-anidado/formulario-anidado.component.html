@@ -1,0 +1,22 @@
+<h2>formulario-anidado works!</h2>
+
+
+<form [formGroup]="miForm">
+
+  <h3>datos en vivo:</h3>
+  <p>{{ miForm.value | json }}</p>
+
+  <h4>telefono fijo</h4>
+  <div formGroupName="fijo">
+    <input placeholder="prefijo" formControlName="prefijo" type="text">
+    <input placeholder="numero" formControlName="numero" type="text">
+  </div>
+
+  <h4>telefono movil</h4>
+  <div formGroupName="movil">
+    <input placeholder="prefijo" formControlName="prefijo" type="text">
+    <input placeholder="numero" formControlName="numero" type="text">
+  </div>
+
+</form>
+
