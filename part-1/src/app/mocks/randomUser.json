@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "Miss", "first": "Ella", "last": "Perala" },
+      "location": {
+        "street": { "number": 9967, "name": "Rautatienkatu" },
+        "city": "Kimitoön",
+        "state": "Finland Proper",
+        "country": "Finland",
+        "postcode": 59898,
+        "coordinates": { "latitude": "-22.8659", "longitude": "157.4633" },
+        "timezone": { "offset": "+5:45", "description": "Kathmandu" }
+      },
+      "email": "ella.perala@example.com",
+      "login": {
+        "uuid": "2b3bfa42-830b-4a2e-be86-bbc2fb4509fb",
+        "username": "happypeacock756",
+        "password": "lucky13",
+        "salt": "nbTOk6T4",
+        "md5": "f7a72fb80632172501e4d2fd92c2a327",
+        "sha1": "0b6dc6de8bf75ba1f74f79c31031959ca881ba53",
+        "sha256": "b4c63af07d577624a5c2b6c82fda12caf2f8304fe5a58f6a4991f36e3407a1b6"
+      },
+      "dob": { "date": "1988-01-24T23:22:32.275Z", "age": 35 },
+      "registered": { "date": "2005-04-25T00:21:52.925Z", "age": 18 },
+      "phone": "07-230-597",
+      "cell": "046-738-50-52",
+      "id": { "name": "HETU", "value": "NaNNA334undefined" },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/96.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/96.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/96.jpg"
+      },
+      "nat": "FI"
+    }
+  ],
+  "info": {
+    "seed": "58f4581202d948b9",
+    "results": 1,
+    "page": 1,
+    "version": "1.4"
+  }
+}

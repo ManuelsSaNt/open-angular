@@ -1,0 +1,38 @@
+<p>pipes-example works!</p>
+
+
+<h2>Pipes para fechas</h2>
+
+<p>Mi cumpleaños sin PIPE es: {{ dob }}</p>
+<p>Mi cumpleaños con PIPE es: {{ dob | date}}</p>
+<p>Mi cumpleaños con PIPE params : "dd/MM/YYYY" es: {{ dob | date: "dd/MM/YYYY"}}</p>
+
+<p>Mi cumpleaños con PIPE es: {{ dob | date: dateFormat }}</p>
+
+<!-- dual pipe -->
+<p>Mi cumpleaños con PIPE es: {{ dob | date: dateFormat | uppercase }}</p>
+
+<button (click)="change = !change">
+  change formate
+</button>
+
+<p> {{'juan' | uppercase}} </p>
+
+<p> {{'@JUAN' | lowercase}} </p>
+
+<!-- personalizaqdo multiplicacion -->
+<p> Resultados: {{ 2 | multiplica: 3}} puntos </p>
+
+<!-- calcular puntuacion -->
+<p> {{ pla1 | calcPuntuacion }} </p>
+<p> {{ pla2 | calcPuntuacion }} </p>
+
+<!--
+  pipes numericos controlas la cantidad de
+  numeros enteros asi como de decimales que 
+  se van a mostrar
+-->
+<p> {{ PI | number: '2.2-2' }} </p>
+
+
+<p> {{ carPrice | currency:'USD' }} </p>

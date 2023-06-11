@@ -13,6 +13,9 @@ import { FormularioAnidadoComponent } from './components/forms/formulario-anidad
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormularioArrayComponent } from './components/forms/formulario-array/formulario-array.component';
 import { FormularioValidadoComponent } from './components/forms/formulario-validado/formulario-validado.component';
+import { PipesExampleComponent } from './components/pipes-example/pipes-example.component';
+import { MultiplicaPipe } from './pipes/multiplica.pipe';
+import { CalcPuntuacionPipe } from './pipes/calc-puntuacion.pipe';
 
 
 
@@ -25,6 +28,9 @@ import { FormularioValidadoComponent } from './components/forms/formulario-valid
     FormularioAnidadoComponent,
     FormularioArrayComponent,
     FormularioValidadoComponent,
+    PipesExampleComponent,
+    MultiplicaPipe,
+    CalcPuntuacionPipe,
   ],
   imports: [
     BrowserModule,

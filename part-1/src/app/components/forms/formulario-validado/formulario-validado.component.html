@@ -32,6 +32,11 @@
     <p style="color: red">El campo es olbigatorio viejo</p>
   </div>
 
+  <input placeholder="password" formControlName="password">
+  <div *ngIf="password?.errors?.['required'] && password?.touched">
+    <p style="color: red">El campo es olbigatorio viejo</p>
+  </div>
+
   <button [disabled]="miFormularioValidado.invalid" type="submit">
     Enviar
   </button>
